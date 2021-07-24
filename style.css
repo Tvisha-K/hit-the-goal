@@ -2,9 +2,9 @@
 {
     background-position: center;
     background-size:contain;
-	background:url(Grass.jpg);
+	background:url('grass.jpg');
 }
-#myCanvas
+#my_canvas
 {
     border-width:10px;
     border-style:ridge;

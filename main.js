@@ -6,7 +6,7 @@ ball_y = 0;
 
 goal_y = 400;
 
-goal_x = 8
+goal_x = 800;
 
 block_image_width = 5;
 
@@ -73,15 +73,17 @@ function my_keydown(e) {
 
 	if ((ball_x == goal_x ) && (ball_y == goal_y)) {
 
+		console.log("ball and goal at the same place")
+
+		canvas.remove(ball_obj);
+
+		
 		document.getElementById("hd3").innerHTML = "You Have Hit The Goal!!";
 
-		document.getElementById("myCanvas").style.borderColor = "red";
+		document.getElementById("my_canvas").style.borderColor = "red";
 
 	}
-	/* Check the coordinates of the ball and hole images to finish the game. 
-	And id coordinates matches them remove ball image, 
-	display "GAME OVER!!!" 
-	and make canvas border 'red'.*/
+	
 	else {
 		if (keyPressed == '38') {
 			up();
